@@ -1,0 +1,17 @@
+{
+  "name": "Ruby on Rails",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "rebornix.Ruby"
+  ],
+  "postCreateCommand": "bundle install",
+  "forwardPorts": [
+    3000
+  ],
+  "remoteUser": "root"
+}
